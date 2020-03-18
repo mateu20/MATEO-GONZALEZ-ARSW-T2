@@ -25,9 +25,7 @@ var Module = (function () {
         var name = $('#nameofcity').val();
         AirportsClient.getAirportsByName(name, mapeador);
     }
-
-
-
+    
     var mapeador = function (airpots) {
         $("#keywords tbody tr").remove();
         for (var i = 0; i < markers.length; i++) {

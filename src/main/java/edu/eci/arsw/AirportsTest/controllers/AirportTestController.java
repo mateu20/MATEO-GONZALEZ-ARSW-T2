@@ -18,6 +18,12 @@ public class AirportTestController {
     @Qualifier("AFServicesImpl")
     AirpotFinderService afs;
     
+    /**
+     * 
+     * @param nombre , identificador por el que se quiere buscar el aeropuerto
+     * @return un response con un String de tipo aeropuerto
+     */
+    
     @RequestMapping(path = "/{name}", method = RequestMethod.GET)
     public ResponseEntity<?> getAirpotsByName(@PathVariable(name = "name") String nombre) {
         try {
