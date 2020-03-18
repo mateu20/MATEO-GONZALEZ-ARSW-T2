@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.eci.arsw.AirportsTestAPI.AirportsTestApiApplication
+web: java $JAVA_OPTS  -Dserver.port=$PORT -jar target/*.jar

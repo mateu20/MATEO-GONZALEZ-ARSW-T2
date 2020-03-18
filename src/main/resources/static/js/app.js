@@ -20,10 +20,10 @@ var Module = (function () {
     var bounds;
     var markers = [];
 
-    var getAirpotsbyName = function () {
+    var getAirportsbyName = function () {
 
         var name = $('#nameofcity').val();
-        airpotsFinderClient.getAirpotsByName(name, mapeador);
+        AirportsClient.getAirportsByName(name, mapeador);
     }
 
 
@@ -74,7 +74,7 @@ var Module = (function () {
 
     return {
         mapeador: mapeador,
-        getAirpotsbyName: getAirpotsbyName,
+        getAirportsbyName: getAirportsbyName,
         initMap: initMap
     };
 })();

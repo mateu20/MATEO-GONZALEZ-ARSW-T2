@@ -1,6 +1,6 @@
-AirpotsClient= (function(){
+AirportsClient= (function(){
     return {
-        getAirpotsByName: function(name,callback){
+        getAirportsByName: function(name,callback){
 
             jQuery.ajax({
                 url: "airpotsfinder/" + name ,
